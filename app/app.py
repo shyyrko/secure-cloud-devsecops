@@ -39,6 +39,10 @@ def init_db():
     db.close()
 
 
+# create the table on startup so it exists under gunicorn too
+init_db()
+
+
 @app.after_request
 def set_security_headers(response):
     # basic security headers
