@@ -15,7 +15,7 @@ my IP (`var.my_ip_cidr`), not `0.0.0.0/0`.
 **No encryption / no audit log (Checkov)** – S3 (AES256) and the EBS volume are
 encrypted, and CloudTrail is on.
 
-**Instance credential theft (Prowler)** – IMDSv2 is required (`http_tokens =
+**Instance credential theft (Checkov)** – IMDSv2 is required (`http_tokens =
 "required"`), which blocks the SSRF trick.
 
 **Hard-coded secrets (gitleaks)** – secrets come from env vars, `terraform.tfvars`

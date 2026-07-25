@@ -53,7 +53,6 @@ Run `terraform destroy` when you're done so it doesn't cost anything.
 - Semgrep – code (SAST)
 - Trivy – dependencies + the Docker image
 - Checkov – the Terraform
-- Prowler – audits the live AWS account
 
 ## Notes
 

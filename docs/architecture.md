@@ -2,8 +2,8 @@
 
 Short version of how the pieces fit together.
 
-**On push to GitHub**, the Actions workflow runs six jobs: unit tests, gitleaks
-(secrets), Semgrep (code), Trivy (deps + image), and Checkov (Terraform). If any
+**On push to GitHub**, the Actions workflow runs five jobs: unit tests, gitleaks
+(secrets), Semgrep (code), Trivy (dependencies + the image), and Checkov (Terraform). If any
 of them fail the push is marked red.
 
 **On AWS** (created by Terraform in `infra/`):
