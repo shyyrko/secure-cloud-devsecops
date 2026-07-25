@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.db
+.pytest_cache/
+.venv/
+venv/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+# NEVER commit real tfvars values (may contain your IP / secrets)
+terraform.tfvars
+*.tfplan
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Personal build guide — kept locally, not part of the shipped project
+GUIDE.md
